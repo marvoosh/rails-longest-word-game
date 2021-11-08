@@ -27,7 +27,7 @@ class GamesController < ApplicationController
   end
 
   def compute_score(attempt, time_taken)
-    time_taken > 60.0 ? 0 : (attempt.size * (1.0 - time_taken / 60.0) / 100_000).round
+    time_taken > 60.0 ? 0 : (attempt.size * (1.0 - time_taken / 60.0) / 500_000).round
   end
 
   def english_word?(word)

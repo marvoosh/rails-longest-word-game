@@ -26,3 +26,19 @@ h1 {
 .letters_box {
   display: flex;
 }
+
+.bar, .btn{
+  height: 50px;
+  border-radius: 2px;
+}
+
+.bar {
+  width: 600px;
+}
+
+.btn {
+  width: 100px;
+  color: #FFEEDB;
+  background-color: #61C9A8;
+  font-size: 15px;
+}
