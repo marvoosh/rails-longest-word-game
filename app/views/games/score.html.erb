@@ -1,0 +1,11 @@
+<h1>Result</h1>
+
+<% if !@included %>
+  <p>Sorry but <strong><%= @guess %></strong> can't be built out of <%= @letters.split.join(',') %></p>
+<% elsif !@is_english %>
+  <p><strong><%= @guess %></strong> is not a word in english..</p>
+<% else %>
+  <p><strong>Congratulations!</strong> Your score is: <%= @score %></p>
+<% end %>
+
+<%= link_to 'try again', '/new' %>
